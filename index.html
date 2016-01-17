@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Annotatortest by Beramos</title>
+    <title id="hometitle">Annotatortest by Beramos</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
@@ -61,6 +61,9 @@
     <script src="javascripts/scale.fix.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script src="http://assets.annotateit.org/annotator/v1.1.0/annotator-full.min.js"></script>
-    <link rel="stylesheet" href="http://assets.annotateit.org/annotator/v1.1.0/annotator.min.css"> 
+    <link rel="stylesheet" href="http://assets.annotateit.org/annotator/v1.1.0/annotator.min.css">
+    jQuery(function ($) {
+     $('#hometitle').annotator();
+    }); 
   </body>
 </html>
