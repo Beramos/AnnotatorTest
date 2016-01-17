@@ -12,7 +12,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body id="content">
     <div class="wrapper">
       <header>
         <h1 id="hometitle">Annotatortest</h1>
@@ -62,10 +62,10 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script src="http://assets.annotateit.org/annotator/v1.1.0/annotator-full.min.js"></script>
     <link rel="stylesheet" href="http://assets.annotateit.org/annotator/v1.1.0/annotator.min.css">
-	<script>    
-	jQuery(function ($) {
-	     $('#hometitle').annotator();
-	    }); 
-	</script>
+     <script>    
+       jQuery(function ($) {
+       $('#content').annotator().annotator('setupPlugins');;
+       }); 
+     </script>
   </body>
 </html>
